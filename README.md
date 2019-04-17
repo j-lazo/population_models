@@ -7,4 +7,11 @@ This repo contains the scripts to simulate a population model of 3 species with 
 3. Using a agent based approach
 
 For the first two options the ODE system is: 
+
 ![equation_system](equation_sys.png)
+
+The system models a food chain where: 
+
+*The food chain begins with the plant. The plant is eaten by the rabbit. The rabbit is then eaten by a larger animal, the fox.*
+
+Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the number of *foxes*. The deltas are the death rates of each specie according to their subindex....  
