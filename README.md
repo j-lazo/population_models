@@ -10,7 +10,7 @@ For the first two options the ODE system is:
 
 ![equation_system](equation_sys.png)
 
-The system models a food chain where: 
+The system models a food chain as follows: 
 
 *The food chain begins with the plant. The plant is eaten by the rabbit. The rabbit is then eaten by a larger animal, the fox.*
 
