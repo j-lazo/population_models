@@ -34,8 +34,7 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >>> choose a random neighbor *i*
 
 >>> **IF** *j*=prey and *i*=empty
->>>> * *j* reproduce with probability *r*
-
+>>>> *j* reproduce with probability *r*
 >>> **ELSEIF** *j*=predator 1 and *i*=empty
 >>>> *j* move with probability *m_r*
 
@@ -45,16 +44,13 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >>> **ELSEIF** *j*=predator 1 and *i*=predator 2
 >>>> *j* dies with probability *d_r*
 
->>> **ELSEIF** *j*=predator 2 and *i*=empty}
-
->>>> **STATE** *j* move with probability *m_f*
+>>> **ELSEIF** *j*=predator 2 and *i*=empty
+>>>> *j* move with probability *m_f*
 
 >>> **ELSEIF** *j*=predator 2 and *i*=predator 1
-
->>>> **STATE** *j* eats $i$ with probability *e_f* and *i* becomes of the type *j*
+>>>> *j* eats $i$ with probability *e_f* and *i* becomes of the type *j*
 
 >>> **ELSEIF** *j*=predator 2 and *i*=predator 2
-
->>>> **STATE** *j* dies with probability *d_f*
+>>>> *j* dies with probability *d_f*
 
 
