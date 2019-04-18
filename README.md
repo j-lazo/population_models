@@ -33,29 +33,28 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >> **FOR** *j* individuals in the population list *P*
 >>> choose a random neighbor *i*
 
- **IF** *j*=prey and *i*=empty
->>>> **STATE** *j* reproduce with probability *r*
+>>> **IF** *j*=prey and *i*=empty
+>>>> * *j* reproduce with probability *r*
+
 >>> **ELSEIF** *j*=predator 1 and *i*=empty
->>>> **STATE** *j* move with probability *m_r*
+>>>> *j* move with probability *m_r*
 
->> **ELSEIF** *j*=predator 1 and *i*=prey
+>>> **ELSEIF** *j*=predator 1 and *i*=prey
+>>>> *j* eats *i* with probability *e_r* and *i* becomes of the type *j*
 
->>> **STATE** *j* eats *i* with probability *e_r* and *i* becomes of the type *j*
+>>> **ELSEIF** *j*=predator 1 and *i*=predator 2
+>>>> *j* dies with probability *d_r*
 
->> **ELSEIF** *j*=predator 1 and *i*=predator 2
+>>> **ELSEIF** *j*=predator 2 and *i*=empty}
 
->>> **STATE** *j* dies with probability *d_r*
+>>>> **STATE** *j* move with probability *m_f*
 
->> **ELSEIF** *j*=predator 2 and *i*=empty}
+>>> **ELSEIF** *j*=predator 2 and *i*=predator 1
 
->>> **STATE** *j* move with probability *m_f*
+>>>> **STATE** *j* eats $i$ with probability *e_f* and *i* becomes of the type *j*
 
->> **ELSEIF** *j*=predator 2 and *i*=predator 1
+>>> **ELSEIF** *j*=predator 2 and *i*=predator 2
 
->>> **STATE** *j* eats $i$ with probability *e_f* and *i* becomes of the type *j*
-
->> **ELSEIF** *j*=predator 2 and *i*=predator 2
-
->>> **STATE** *j* dies with probability *d_f*
+>>>> **STATE** *j* dies with probability *d_f*
 
 
