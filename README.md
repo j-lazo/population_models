@@ -73,5 +73,8 @@ The algorith for the Cellular Automata (C.A.) is as follows:
 
 ## 3. C.A. Results 
 
-
-
+![ca_results_1](results/200_size_100.png)
+![ca_results_2](results/CA_figure_01.png)
+![ca_results_3](results/CA_figure_02.png)
+![ca_results_4](results/CA_figure_4.png)
+![ca_results_5](results/CA_figure_5.png)
