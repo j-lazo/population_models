@@ -29,6 +29,7 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 
 ## 3. Cellular Automata Simullations 
 
+````
 > **FOR** T steps
 >> **FOR** *j* individuals in the population list *P*
 >>> choose a random neighbor *i*
@@ -57,5 +58,5 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >>**ENDFOR**
 
 >**ENDFOR**
-
+````
 
