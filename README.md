@@ -32,14 +32,10 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 > **FOR** T steps
 >> **FOR** *j* individuals in the population list *P*
 >>> **STATE** choose a random neighbor *i*
-
->>**IF** *j*=prey and *i*=empty
-
->>> **STATE** *j* reproduce with probability *r*
-
->> **ELSEIF** *j*=predator 1 and *i*=empty
-
->>> **STATE** *j* move with probability *m_r*
+>>>**IF** *j*=prey and *i*=empty
+>>>> **STATE** *j* reproduce with probability *r*
+>>> **ELSEIF** *j*=predator 1 and *i*=empty
+>>>> **STATE** *j* move with probability *m_r*
 
 >> **ELSEIF** *j*=predator 1 and *i*=prey
 
