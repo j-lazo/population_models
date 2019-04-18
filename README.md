@@ -35,6 +35,7 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 
 >>> **IF** *j*=prey and *i*=empty
 >>>> *j* reproduce with probability *r*
+
 >>> **ELSEIF** *j*=predator 1 and *i*=empty
 >>>> *j* move with probability *m_r*
 
@@ -52,5 +53,8 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 
 >>> **ELSEIF** *j*=predator 2 and *i*=predator 2
 >>>> *j* dies with probability *d_f*
+
+>>**ENDFOR**
+>**ENDFOR**
 
 
