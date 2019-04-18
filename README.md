@@ -27,9 +27,17 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 
 ## 2. Stochastic Simulations
 
+![results_5](results/P4_lotkavolterra_guillespie_100_1500_1500_1500.png)
+![results_6](results/P4_lotkavolterra_guillespie_spaceplot_100_500_200_300.png)
+
+![results_7](results/P4_lotkavolterra_guillespie_401_201_101.png)
+![results_8](results/P4_lotkavolterra_guillespie_spaceplot_500_200_110.png)
+
+![results_9](results/P4_lotkavolterra_guillespie_500_200_200.png)
+![results_10](results/P4_lotkavolterra_guillespie_spaceplot_500_200_120.png)
+
 ## 3. Cellular Automata Simullations 
 
-````
 > **FOR** T steps
 >> **FOR** *j* individuals in the population list *P*
 >>> choose a random neighbor *i*
@@ -58,5 +66,4 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >>**ENDFOR**
 
 >**ENDFOR**
-````
 
