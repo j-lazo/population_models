@@ -55,6 +55,7 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 >>>> *j* dies with probability *d_f*
 
 >>**ENDFOR**
+
 >**ENDFOR**
 
 
