@@ -17,5 +17,5 @@ The system models a food chain as follows:
 Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the number of *foxes*. The deltas are the death rates of each specie according to their subindex....  
 
 
-![result_1](results/_lotkavolterra_ode45_100_150_150_150.png = 250x2250)
-![result_2](results/_lotkavolterra_ode45_spaceplot_100_401_201_101.png = 250x2250)
+![result_1](results/_lotkavolterra_ode45_100_150_150_150.png)
+![result_2](results/_lotkavolterra_ode45_spaceplot_100_401_201_101.png)
