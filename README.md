@@ -16,7 +16,7 @@ The system models a food chain as follows:
 
 Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the number of *foxes*. The deltas are the death rates of each specie according to their subindex....  
 
-## Determinisit Solution
+## 1. Determinisit Simulations
 
 ![result_1](results/_lotkavolterra_ode45_100_150_150_150.png)
 ![result_2](results/_lotkavolterra_ode45_spaceplot_100_401_201_101.png)
@@ -24,3 +24,29 @@ Being **G** the amount of *grass*, **R** the number of *rabbits*, and **F** the 
 
 ![result_3](results/_lotkavolterra_ode45_50_1500_1500_1500.png)
 ![result_4](results/_lotkavolterra_ode45_spaceplot_50_1500_1500_1500.png)
+
+## 2. Stochastic Simulations
+
+## 3. Cellular Automata Simullations 
+
+> **FOR** T steps
+>> **FOR** *j* individuals in the population list *P*
+>>> **STATE** choose a random neighbor *i*
+>>>**IF** *j*=prey and *i*=empty 
+        \STATE $j$ reproduce with probability $r$
+\ELSIF {$j$=predator 1 and $i$=empty}
+         \STATE $j$ move with probability $m_r$
+\ELSIF {$j$=predator 1 and $i$=prey}
+         \STATE $j$ eats $i$ with probability $e_r$ and $i$ becomes of the type $j$
+\ELSIF {$j$=predator 1 and $i$=predator 2}
+         \STATE $j$ dies with probability $d_r$
+\ELSIF {$j$=predator 2 and $i$=empty}
+         \STATE $j$ move with probability $m_f$
+\ELSIF {$j$=predator 2 and $i$=predator 1}
+         \STATE $j$ eats $i$ with probability $e_f$ and $i$ becomes of the type $j$
+\ELSIF {$j$=predator 2 and $i$=predator 2}
+         \STATE $j$ dies with probability $d_f$
+
+>>>**ENDIF**
+>>**ENDFOR**
+>**ENDFOR**
